@@ -1,6 +1,10 @@
 <!-- <button class="login"  (click)="login()">Log in</button><br> -->
             
 <p>Sign in </p>
+<label for="uname"><b>username<span>*</span> </b></label><br>
+                <input id="user" type="text" placeholder="Enter email or phone number"
+                 name="uname" required [(ngModel)]="mob_email" ><br><br>
+<button class="login"  (click)="login()">Log in</button><br>
 <div>
 <a routerLink="/create-account"> Create your account&nbsp;&nbsp;&nbsp;&nbsp;</a>
 </div>

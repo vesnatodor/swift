@@ -15,6 +15,7 @@ import { BasketComponent } from './components/basket/basket.component';
 import { RouterModule } from '@angular/router';
 import { route } from './routes';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CreateAccountComponent } from './components/create-account/create-accou
   imports: [
     BrowserModule,
     RouterModule.forRoot(route),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   
   ],
   providers: [],

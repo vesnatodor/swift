@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent {
+
+  mob_email= "";
   
-  login(){
-    
+  login(): void{
+
   }
   
   // login(): void {
