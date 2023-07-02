@@ -6,6 +6,7 @@ import { AwesomeShopComponent } from "./components/awesome-shop/awesome-shop.com
 import { BestSellersComponent } from "./components/best-sellers/best-sellers.component";
 import { BooksComponent } from "./components/books/books.component";
 import { TextbookRentalsComponent } from "./components/textbook-rentals/textbook-rentals.component";
+import { CreateAccountComponent } from "./components/create-account/create-account.component";
 
 
 export const route:Routes= [
@@ -45,6 +46,12 @@ export const route:Routes= [
                                         
                       
      },
+     {
+        path: 'create-account',
+        component: CreateAccountComponent,
+                                  
+                
+},
 
     
     

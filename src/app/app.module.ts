@@ -14,6 +14,7 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { RouterModule } from '@angular/router';
 import { route } from './routes';
+import { CreateAccountComponent } from './components/create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { route } from './routes';
     TextbookRentalsComponent,
     AwesomeShopComponent,
     SignInComponent,
-    BasketComponent
+    BasketComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,

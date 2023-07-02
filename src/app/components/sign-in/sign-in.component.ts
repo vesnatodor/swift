@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SignInComponent {
   
-  
+  login(){
+    
+  }
   
   // login(): void {
   //   this.storageService.login(this.username,this.password);
