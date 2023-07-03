@@ -10,19 +10,20 @@ export class StorageService {
   loggedUser: BehaviorSubject<IUser> = new BehaviorSubject<IUser>({name: '', mob_email: '', pass:''}); 
 
   constructor( private apiService: ApiService) {
-    
+    const name= localStorage.getItem('name');
+    const mob_email= localStorage.getItem('mob_email');
+    const password = localStorage.getItem('password');
+    if (name && mob_email && password){
+     this.loggedUser.next({
+       name: name, pass: password,
+       mob_email: undefined
+     });
+      
    }
 }
 
 
-// constructor( private apiService: ApiService) {
-//   const username = localStorage.getItem('username');
-//    const password = localStorage.getItem('password');
-//   if (username && password){
-//    this.loggedUser.next({user: username, pass: password});
 
-//  }
-// }
 // login(username: string, password:string) {
 //   this.apiService.getUsers().subscribe( (_users: IUser[]) => {
 //     const user= _users.find(u=>u.user===username && u.pass===password)
