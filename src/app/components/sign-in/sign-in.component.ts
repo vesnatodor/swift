@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -6,16 +7,37 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent {
-
+  isLoggIn = false; 
   mob_email= "";
-  
-  login(): void{
+  basketService: any;
+
+
+  constructor(private storageService: StorageService){
 
   }
   
-  // login(): void {
-  //   this.storageService.login(this.username,this.password);
 
-  // }
+  ngOnInit(): void {
+    this.storageService.getUserLoggedIn().subscribe(user => {
+      if (user.name === '') {
+        this.isLoggIn = false;
+      } else {
+        this.isLoggIn = true;
+      }
+    });
+
+    
+
+
+  }
+ 
+  login(){
+    this.storageService.login(this.mob_email)
+  }
+  logout(){
+    this.storageService.logout();
+  }
+  
+  
 
 }

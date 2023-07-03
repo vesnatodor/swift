@@ -1,5 +1,5 @@
 export interface IUser {
     name: string,
-    mob_email:any,
+    mob_email: string,
     pass: string
     }

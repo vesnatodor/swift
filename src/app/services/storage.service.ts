@@ -7,6 +7,7 @@ import { IUser } from '../models/user.interface';
   providedIn: 'root'
 })
 export class StorageService {
+ 
   loggedUser: BehaviorSubject<IUser> = new BehaviorSubject<IUser>({name: '', mob_email: '', pass:''}); 
 
   constructor( private apiService: ApiService) {
@@ -16,27 +17,46 @@ export class StorageService {
     if (name && mob_email && password){
      this.loggedUser.next({
        name: name, pass: password,
-       mob_email: undefined
+       mob_email: mob_email
      });
       
    }
 }
 
+login(mob_email: string) {
+  this.apiService.getUsers().subscribe( (_users: IUser[]) => {
+    const user= _users.find(u=>u.mob_email===mob_email);
+    if (user){
+     localStorage.setItem('name',user.name);
+     localStorage.setItem('password',user.pass);
+     localStorage.setItem('mob_email',user.mob_email);
 
-
-// login(username: string, password:string) {
-//   this.apiService.getUsers().subscribe( (_users: IUser[]) => {
-//     const user= _users.find(u=>u.user===username && u.pass===password)
-//     if (user){
-//      localStorage.setItem('username',user.user);
-//      localStorage.setItem('password',user.pass);
-
-//      this.loggedUser.next({user: user.user, pass: user.pass});
-//     }
+     this.loggedUser.next({
+       name: 'user.name',
+       mob_email: 'user.mob_email',
+       pass: 'user.pass'
+     });
+    }
   
-//     else
-//     alert('Wrong username or password!');
-     
-//     });
-    
-//   };
+    else
+    alert('Wrong username or password!');
+    });
+
+  }
+  logout() {
+    localStorage.clear();
+    this.loggedUser.next({name: '', mob_email: '', pass:''});
+  }
+  
+  
+
+    getUserLoggedIn(){
+      return this.loggedUser;
+    }
+
+
+}
+
+ 
+
+
