@@ -18,18 +18,30 @@
       
   </div>
   </nav>
+
   <nav class="navbar navbar-expand-lg  navbar-light">
    <div class="container-fluid">
-      
-  
-           
-           <a  class="navbar-brand" routerLink="/books"> Books</a>
-           <a  class="navbar-brand" routerLink="/best_sellers">Best Sellers & more  </a>
-           <a  class="navbar-brand" routerLink="/text_books">Text Books </a>
-           <a  class="navbar-brand nav-link" routerLink="/textbook_rentals">Textbook Rentals </a>
-           
-            
-           
+      <button class="navbar-toggler"
+       type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbartab"
+        >
+        <span class="navbar-toggler-icon">
+
+      </span></button>
+      <div class="navbar-collapse collapse " id="navbartab">
+      <ul class="navbar-nav ms-auto me-5">
+     <li   class="nav-item">  <a  class="navbar-brand dropdown-item nav-link" routerLink="/books"> Books</a></li>   
+       <li class="nav-item"> <a  class="navbar-brand dropdown-item nav-link" routerLink="/best_sellers">Best Sellers & more  </a></li>    
+      <li class="nav-item"><a  class="navbar-brand dropdown-item nav-link" routerLink="/text_books">Text Books </a></li>   
+       <li class="nav-item"> <a  class="navbar-brand nav-link dropdown-item nav-link" routerLink="/textbook_rentals">Textbook Rentals </a></li>      
+
+
+
+
+      </ul>
+   </div>    
+          
           
   
     
