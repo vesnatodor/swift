@@ -2,3 +2,15 @@
     background-color:#232F3E ;
     
 }
+
+
+
+.awe:hover {
+    border:1px solid white;
+  }
+  ul li a:hover {
+    border:1px solid white;
+  }
+  .bor:hover {
+    border:1px solid white;
+  }
