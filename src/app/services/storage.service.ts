@@ -23,9 +23,9 @@ export class StorageService {
    }
 }
 
-login(mob_email: string) {
+login(email: string) {
   this.apiService.getUsers().subscribe( (_users: IUser[]) => {
-    const user= _users.find(u=>u.email===mob_email);
+    const user= _users.find(u=>u.email===email);
     if (user){
      localStorage.setItem('name',user.name);
      localStorage.setItem('password',user.pass);
@@ -39,7 +39,7 @@ login(mob_email: string) {
     }
   
     else
-    alert('Wrong username or password!');
+    alert('Wrong username!');
     });
 
   }

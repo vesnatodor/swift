@@ -1,15 +1,16 @@
 <!-- <button class="login"  (click)="login()">Log in</button><br> -->
             
-<p>Sign in </p>
-<div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address<span>*</span></label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<div class="sign_in fs-3">Sign in </div>
+<div class="row">
+<div class="mb-3 col-sm-12 col-md-9 col-lg-6">
+    <label for="exampleInputEmail1" class="form-label ">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required [(ngModel)]="email" >
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    
   </div>
-
-
-                <input id="user" type="text" placeholder="Enter email or phone number"
-                 name="uname" required [(ngModel)]="email" ><br><br>
+ 
+</div>
+                
 <button class="login"  (click)="login()">Log in</button><br>
 <div>
 <a routerLink="/create-account"> Create your account&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -19,4 +20,9 @@
 
 <button class="logout
            " *ngIf="isLoggIn" (click)="logout()">Logout</button>
-                
+
+
+
+
+
+ 
