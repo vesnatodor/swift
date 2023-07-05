@@ -1,9 +1,15 @@
 <!-- <button class="login"  (click)="login()">Log in</button><br> -->
             
 <p>Sign in </p>
-<label for="uname"><b>mobile or email<span>*</span> </b></label><br>
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address<span>*</span></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+
+
                 <input id="user" type="text" placeholder="Enter email or phone number"
-                 name="uname" required [(ngModel)]="mob_email" ><br><br>
+                 name="uname" required [(ngModel)]="email" ><br><br>
 <button class="login"  (click)="login()">Log in</button><br>
 <div>
 <a routerLink="/create-account"> Create your account&nbsp;&nbsp;&nbsp;&nbsp;</a>
