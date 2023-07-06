@@ -17,10 +17,13 @@
    <div class=" cust">New customer?<br><a routerLink="/create-account"> Start here!</a></div> 
 
 
+<div class="logout">
+    <button class=" btn btn-light" *ngIf="isLoggIn" (click)="logout()">Logout</button>
 
 
-<button class="logout btn btn-light
-           " *ngIf="isLoggIn" (click)="logout()">Logout</button>
+</div>
+
+
 
 
 
