@@ -1,27 +1,26 @@
 <!-- <button class="login"  (click)="login()">Log in</button><br> -->
             
 <div class="sign_in fs-3">Sign in </div>
-<div >
-<div class="mb-3 ">
+
+<div class="mb-3">
     <label for="exampleInputEmail1" class="form-label ">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required [(ngModel)]="email" >
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     
   </div>
- 
-</div>
-                
-<button class="login"  (click)="login()">Log in</button><br>
-<div>
-<a routerLink="/create-account"> Create your account&nbsp;&nbsp;&nbsp;&nbsp;</a>
-</div>
+
+    <button type="button" class="login btn btn-light" (click)="login()">Log in</button>  
+
+           
+
+
+   <div class=" cust">New customer?<br><a routerLink="/create-account"> Start here!</a></div> 
 
 
 
-<button class="logout
+
+<button class="logout btn btn-light
            " *ngIf="isLoggIn" (click)="logout()">Logout</button>
-
-
 
 
 
