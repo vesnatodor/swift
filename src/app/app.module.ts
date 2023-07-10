@@ -9,7 +9,6 @@ import { BooksComponent } from './components/books/books.component';
 import { BestSellersComponent } from './components/best-sellers/best-sellers.component';
 import { TextBooksComponent } from './components/text-books/text-books.component';
 import { TextbookRentalsComponent } from './components/textbook-rentals/textbook-rentals.component';
-import { AwesomeShopComponent } from './components/awesome-shop/awesome-shop.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { RouterModule } from '@angular/router';
@@ -25,7 +24,6 @@ import { FormsModule } from '@angular/forms';
     BestSellersComponent,
     TextBooksComponent,
     TextbookRentalsComponent,
-    AwesomeShopComponent,
     SignInComponent,
     BasketComponent,
     CreateAccountComponent

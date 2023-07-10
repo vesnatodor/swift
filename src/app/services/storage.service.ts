@@ -7,8 +7,10 @@ import { IUser } from '../models/user.interface';
   providedIn: 'root'
 })
 export class StorageService {
+  [x: string]: any;
  
   loggedUser: BehaviorSubject<IUser> = new BehaviorSubject<IUser>({name: '', email: '', pass:''}); 
+  
 
   constructor( private apiService: ApiService) {
     const name= localStorage.getItem('name');
@@ -38,8 +40,16 @@ login(email: string) {
      });
     }
   
-    else
-    alert('Wrong username!');
+    else{
+      alert('Wrong username!');
+    
+
+
+
+
+    }
+   
+    
     });
 
   }
