@@ -1,0 +1,90 @@
+[
+
+    {
+              "id" :1 ,
+              "image": "/assets/images/book_1.jpg",
+              "title": "Heart",
+              "price": 10,
+              "basket": "fafa"
+              
+    },
+    {
+              "id" :2 ,
+              "image": "/assets/images/book_2.jpg",
+              "title": "Magnetic wand",
+              "price": 9,
+              "basket":"fafa"
+             
+    },
+    {
+              "id" :3 ,
+              "image": "/assets/images/book_3.jpg",
+              "title": "Copper bracelet",
+              "price": 13,
+              "basket":"fafa"
+
+              
+    },
+    {
+
+              "id" :4 ,
+              "image": "/assets/images/book_4.jpg",
+              "title": "Bracelet",
+              "price": 23,
+              "basket":"fafa"
+         },
+    
+
+        {
+                  "id" :5 ,
+                  "image": "/assets/images/book_5.jpg",
+                  "title": "Heart",
+                  "price": 5,
+                  "basket": "fafa"
+                  
+        },
+        {
+                  "id" :6 ,
+                  "image": "/assets/images/book_6.jpg",
+                  "title": "Magnetic wand",
+                  "price": 21,
+                  "basket":"fafa"
+                 
+        },
+        {
+                  "id" :7 ,
+                  "image": "/assets/images/book_7.jpg",
+                  "title": "Copper bracelet",
+                  "price": 11,
+                  "basket":"fafa"
+    
+                  
+        },
+        {
+    
+                  "id" :8 ,
+                  "image": "/assets/images/book_8.jpg",
+                  "title": "Bracelet",
+                  "price": 23,
+                  "basket":"fafa"
+                  
+        
+        },
+        {
+            "id" :9 ,
+            "image": "/assets/images/book_9.jpg",
+            "title": "Heart",
+            "price": 10,
+            "basket": "fafa"
+            
+  },
+  {
+            "id" :10 ,
+            "image": "/assets/images/book_10.jpg",
+            "title": "Magnetic wand",
+            "price": 9,
+            "basket":"fafa"
+           
+  }
+    
+]

@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { route } from './routes';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
 import { FormsModule } from '@angular/forms';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     RouterModule.forRoot(route),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
   
   ],
   providers: [],
