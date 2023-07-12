@@ -3,7 +3,7 @@
     {
               "id" :1 ,
               "image": "/assets/images/book_1.jpg",
-              "title": "Heart",
+              "title": "Leight howard and the ghosts of Simmons Pierce Maner",
               "price": 10,
               "basket": "fafa"
               
@@ -11,7 +11,7 @@
     {
               "id" :2 ,
               "image": "/assets/images/book_2.jpg",
-              "title": "Magnetic wand",
+              "title": "Stone maindens",
               "price": 9,
               "basket":"fafa"
              
@@ -19,7 +19,7 @@
     {
               "id" :3 ,
               "image": "/assets/images/book_3.jpg",
-              "title": "Copper bracelet",
+              "title": "Woman in the woods",
               "price": 13,
               "basket":"fafa"
 
@@ -29,7 +29,7 @@
 
               "id" :4 ,
               "image": "/assets/images/book_4.jpg",
-              "title": "Bracelet",
+              "title": "Fourth wing",
               "price": 23,
               "basket":"fafa"
          },
@@ -38,7 +38,7 @@
         {
                   "id" :5 ,
                   "image": "/assets/images/book_5.jpg",
-                  "title": "Heart",
+                  "title": "Iron flame",
                   "price": 5,
                   "basket": "fafa"
                   
@@ -46,7 +46,7 @@
         {
                   "id" :6 ,
                   "image": "/assets/images/book_6.jpg",
-                  "title": "Magnetic wand",
+                  "title": "North queen",
                   "price": 21,
                   "basket":"fafa"
                  
@@ -54,7 +54,7 @@
         {
                   "id" :7 ,
                   "image": "/assets/images/book_7.jpg",
-                  "title": "Copper bracelet",
+                  "title": "Off the pages",
                   "price": 11,
                   "basket":"fafa"
     
@@ -64,7 +64,7 @@
     
                   "id" :8 ,
                   "image": "/assets/images/book_8.jpg",
-                  "title": "Bracelet",
+                  "title": "A haunted road atlas",
                   "price": 23,
                   "basket":"fafa"
                   
@@ -73,7 +73,7 @@
         {
             "id" :9 ,
             "image": "/assets/images/book_9.jpg",
-            "title": "Heart",
+            "title": "The housemaid",
             "price": 10,
             "basket": "fafa"
             
@@ -81,7 +81,7 @@
   {
             "id" :10 ,
             "image": "/assets/images/book_10.jpg",
-            "title": "Magnetic wand",
+            "title": "The summoner echoes the fallen",
             "price": 9,
             "basket":"fafa"
            
