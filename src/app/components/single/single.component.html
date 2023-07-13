@@ -1,1 +1,13 @@
-<p>single works!</p>
+<div class="whole">
+    <div class="single-product"> 
+                 <img [src]="product?.image" [alt]="product?.title" />
+
+    </div>
+    <div class="single-product--info">
+
+              <p class="title">{{product?.title}}</p>
+              <p class="price">{{product?.price | currency : 'EUR'}}</p>
+            
+    </div>
+</div>
+
