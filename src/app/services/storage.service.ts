@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { ApiService } from './api.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { IUser } from '../models/user.interface';
+import { IProduct } from '../models/products.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -65,9 +66,20 @@ login(email: string) {
       return this.loggedUser;
     }
 
+    saveBasket(basket: IProduct[]) {
+      localStorage.setItem('basket', JSON.stringify(basket));
+    }
 
-}
+    getBasket(): IProduct[] {
+      const jsonProducts = localStorage.getItem('basket');
 
+      if (!jsonProducts) {
+        return [];
+      }
+
+      return JSON.parse(jsonProducts);
+    }
  
 
 
+}
