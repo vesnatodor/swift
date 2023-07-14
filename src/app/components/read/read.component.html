@@ -1,9 +1,9 @@
 
-<div class="products">
+<div class="products row ">
     <app-product
 
     *ngFor="let product of products"
-    class="products--item"
+    class="products--item col-6 m-5 p-5"
     [id]="product.id"
     [image]="product.image"
     [title]="product.title"

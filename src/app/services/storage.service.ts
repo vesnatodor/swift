@@ -18,7 +18,8 @@ export class StorageService {
     const password = localStorage.getItem('password');
     if (name && email && password){
      this.loggedUser.next({
-       name: name, pass: password,
+       name: name,
+       pass: password,
        email: email
      });
       
