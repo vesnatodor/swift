@@ -12,5 +12,39 @@ export class BasketService {
 
 
 
-  constructor( private storageService: StorageService) { }
+  constructor( private storageService: StorageService) {
+    this.productsList = storageService.getBasket();
+    this.productsListSubject.next(this.productsList);
+   }
+   addProduct(product: IProduct) 
+   {
+    const productInList = this.productsList.find(p => p.id === product.id);
+    if (productInList) {
+      productInList.quantity++;
+    } else {
+      product.quantity = 1;
+      this.productsList = [...this.productsList, product];
+    }
+
+    this.productsListSubject.next(this.productsList);
+    this.storageService.saveBasket(this.productsList);
+   }
+
+   getProductsInCartSubject() {
+    return this.productsListSubject;
+   }
+
+   
+   getProductsList() {
+    return this.productsList;
+   }
+   removeProduct(productId: number) {
+    this.productsList = this.productsList.filter(p => p.id !== productId);
+    this.productsListSubject.next(this.productsList);
+    this.storageService.saveBasket(this.productsList);
+   }
+
+
+
+
 }
