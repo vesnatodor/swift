@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IProduct } from 'src/app/models/products.interface';
+import { BasketService } from 'src/app/services/basket.service';
 
 @Component({
   selector: 'app-product',
@@ -22,4 +23,20 @@ export class ProductComponent {
     @Input () price: number=0;
     @Input() basket: string='';
 
+    constructor(private basketService: BasketService) {}
+
+   
+
+
+
+    addToCart() {
+      this.product.id = this.id;
+      this.product.image = this.image;
+      this.product.title = this.title;
+      this.product.price = this.price;
+      this.product.basket = this.basket;
+
+      this.basketService.addProduct(this.product);
+
+}
 }
