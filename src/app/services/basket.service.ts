@@ -43,7 +43,10 @@ export class BasketService {
     this.productsListSubject.next(this.productsList);
     this.storageService.saveBasket(this.productsList);
    }
-
+   clearProductsList() {
+    this.productsList = [];
+    this.productsListSubject.next(this.productsList);
+   }
 
 
 
