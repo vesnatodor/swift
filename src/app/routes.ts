@@ -7,6 +7,7 @@ import { TextbookRentalsComponent } from "./components/textbook-rentals/textbook
 import { CreateAccountComponent } from "./components/create-account/create-account.component";
 import { SingleComponent } from "./components/single/single.component";
 import { ReadComponent } from "./components/read/read.component";
+import { OrderComponent } from "./components/order/order.component";
 
 
 export const route:Routes= [
@@ -35,6 +36,10 @@ export const route:Routes= [
     {
         path:'read',
         component:ReadComponent,
+    },
+    {
+        path:'order',
+        component:OrderComponent,
     },
 
    

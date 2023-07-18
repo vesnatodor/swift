@@ -1,14 +1,15 @@
-
-<div class="products row ">
+<div class="container-fluid">
+<div class="products row">
     <app-product
 
     *ngFor="let product of products"
-    class="products--item col-6 m-5 p-5"
+    class=" products--item g-5 col-1 bg-success p-5 m-5"
     [id]="product.id"
     [image]="product.image"
     [title]="product.title"
     [price]="product.price"
-    [basket]="product.basket"
+
+    [basket]=" product.basket"
     
    
 
@@ -16,3 +17,6 @@
      
           
 </div>
+</div>
+
+

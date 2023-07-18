@@ -17,6 +17,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProductComponent } from './components/product/product.component';
 import { SingleComponent } from './components/single/single.component';
 import { ReadComponent } from './components/read/read.component';
+import { OrderComponent } from './components/order/order.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ReadComponent } from './components/read/read.component';
     ProductComponent,
     SingleComponent,
     ReadComponent,
+    OrderComponent,
   
   ],
   imports: [
