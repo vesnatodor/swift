@@ -1,9 +1,9 @@
 <div class="container-fluid">
-<div class="products row">
+<div class="products">
     <app-product
 
     *ngFor="let product of products"
-    class=" products--item g-5 col-1 bg-success p-5 m-5"
+    class=" products--item"
     [id]="product.id"
     [image]="product.image"
     [title]="product.title"
