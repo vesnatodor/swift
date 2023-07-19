@@ -1,13 +1,19 @@
 <div class="whole">
-    <div class="single-product"> 
-                 <img [src]="product?.image" class="w-50 p-5 m-5"     [alt]="product?.title" />
+    <div class="single-product w-50"> 
+                 <img [src]="product?.image" class="w-75 float-start       p-5 m-5"     [alt]="product?.title" />
 
     </div>
-    <div class="single-product--info">
+    <div class="single-product--info float-start">
 
-              <p class="title">{{product?.title}}</p>
-              <p class="price">{{product?.price | currency : 'EUR'}}</p>
-              <button class="add_to_cart" (click)= "addToCart()" >Add to cart</button><br>
+              <p class="title h1">{{product?.title}}</p>
+              <div class="two mt-5">
+
+                <p class="price h3 pe-5">{{product?.price | currency : 'EUR'}}</p>
+                <button class="add_to_cart ps-3 pe-3 fw-bold  btn btn-light   " (click)= "addToCart()" >Add to cart</button><br>
+
+
+              </div>
+             
             
     </div>
 </div>

@@ -1,3 +1,10 @@
 .whole{
     display: flex;
 }
+.single-product--info{
+    margin-top: 200px;
+}
+.two{
+
+    display: flex;
+}

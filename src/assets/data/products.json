@@ -3,7 +3,7 @@
     {
               "id" :1 ,
               "image": "/assets/images/book_1.jpg",
-              "title": "Leight howard and the ghosts of Simmons Pierce Maner",
+              "title": "Leight howard",
               "price": 10,
               "basket": "fafa"
               
@@ -11,7 +11,7 @@
     {
               "id" :2 ,
               "image": "/assets/images/book_2.jpg",
-              "title": "Stone maindens",
+              "title": "Going home",
               "price": 9,
               "basket":"fafa"
              
