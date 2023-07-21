@@ -2,8 +2,10 @@
         <div class="product  p-5 m-3">
             <a [routerLink]="'/product/'+id">
                   <img [src]="image" class="  img-thumbnail w-25 p-5"  [alt]="title" />
-                  <p class="title w-25 ps-4 ms-3 h6">{{title}}</p>
-            </a>
+
+           </a>
+                  <p class="title h4 text-black  w-25 ps-4 ms-3 h6">{{title}}</p>
+           
          <div class="two">
             <p class="price ms-5">{{price | currency : 'EUR'}}    </p>
             <span  (click)= "addToCart()" > <p class="basket ms-5 "><i class="fa fa-shopping-basket" aria-hidden="true"></i></p></span>

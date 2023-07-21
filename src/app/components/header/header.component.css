@@ -16,4 +16,19 @@
     border:1px solid white;
   }
 
+  .butt_wh{
+    display: none;
+
+  }
+
+@media screen and (max-width: 1000px) {
+      
+         .butt_wh{
+
+          display: block;
+         }
+         
+          
+        }
+
  
