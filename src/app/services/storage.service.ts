@@ -33,7 +33,7 @@ login(email: string) {
     if (user){
      localStorage.setItem('name',user.name);
      localStorage.setItem('password',user.pass);
-     localStorage.setItem('mob_email',user.email);
+     localStorage.setItem('email',user.email);
 
      this.loggedUser.next({
        name: 'user.name',

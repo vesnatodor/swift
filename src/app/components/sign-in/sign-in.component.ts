@@ -8,7 +8,7 @@ import { StorageService } from 'src/app/services/storage.service';
 })
 export class SignInComponent {
   isLoggIn = false; 
-  email= "";
+  email='';
   basketService: any;
 
 
@@ -31,7 +31,8 @@ export class SignInComponent {
 
   }
  
-  login(){
+ 
+  login(): void{
     this.storageService.login(this.email)
   }
   logout(){
