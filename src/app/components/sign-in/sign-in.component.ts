@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BasketService } from 'src/app/services/basket.service';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class SignInComponent {
   basketService: any;
 
 
-  constructor(private storageService: StorageService){
+  constructor(private storageService: StorageService, basketService: BasketService){
 
   }
   
@@ -37,6 +38,7 @@ export class SignInComponent {
   }
   logout(){
     this.storageService.logout();
+    this.basketService.clearProductsList();
   }
   
   
